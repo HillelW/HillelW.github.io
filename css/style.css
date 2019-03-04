@@ -1,0 +1,308 @@
+body {
+  background-color: #222;
+}
+
+#menu-outer {
+  position: fixed;
+  width: 100%;
+  min-width: 690px;
+  height: 100px;
+  background: url(https://c2.staticflickr.com/8/7306/13896972262_2b0610a4ab_b.jpg) repeat-x;
+  
+/*   background:url(http://ehub46.webhostinghub.com/~seaqua5/r-p.ninja/menuIMGfancy200px.png) repeat-x; */
+  background-size:200%;
+  opacity: 0.05;
+  overflow: visible;
+}  
+
+#menu-outer:hover {
+  animation-play-state: running;
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+}
+
+#horizontal-menu ul {
+  text-align: right;
+  padding-top: 20px;
+}
+
+#horizontal-menu li {
+  list-style: none;
+  display: inline;
+  font-family: monospace;
+  font-size: 30px;
+}
+
+#horizontal-menu li a {
+  color: orange;
+}
+
+#horizontal-menu ul li:hover {
+  cursor: pointer;
+  animation: flash 1s infinite alternate;
+  animation-play-state: running;
+}
+
+@keyframes flash {
+  100% {
+    opacity: 0.5;
+  }
+} 
+
+/* see for animations https://github.com/daneden/animate.css */
+
+/* mobile responiveness addressed here */
+
+.mobile-nav{
+		display: block;
+		}
+		.mobile-nav span{
+			color: #ffffff;
+		}
+		.mobile-nav-trigger{
+			position: fixed;
+			top: 33px;
+			right: 0;
+			background-color: #202529;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.mobile-nav ul{
+			display: none;
+			position: fixed;
+			background-color: #202529;
+			width: 100%;
+			left: 0;
+		}
+		.mobile-nav a{
+			color: #ffffff;
+			
+		}
+
+@media only screen and (max-width: 640px){
+	body {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
+	.header{
+	height: 47px;
+	padding-top: 27px;
+	padding-left: 30px;
+	}
+	.nav{
+		display: none;
+	}
+	.mobile-nav{
+		display: block;
+		}
+		.mobile-nav span{
+			font-size: 22px;
+		}
+		.mobile-nav .mobile-nav-trigger{
+			height: 74px;
+			width: 82px;
+			background-image: url('http://www.xn--12cl2bdbn8kwa7a1a3m8cku.com/mobile-nav-medium-icon.png');
+		}
+		.mobile-nav ul{
+			top: 74px;
+			padding-bottom: 15px;
+		}
+		.mobile-nav li{
+			padding: 10px 0 10px 30px;
+		}
+		.mobile-nav a{
+			font-size: 20px;
+		}
+}
+
+@media only screen and (max-width: 320px){
+	body {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
+	.header{
+	    height: 27px;
+	    padding-top: 10px;
+	    padding-left: 20px;
+	  }
+	  .nav{
+		  display: none;
+	  }
+	  .mobile-nav{
+	  	display: block;
+	  	}
+	  	.mobile-nav span{
+	  		font-size: 12px;
+	  	}
+	  	.mobile-nav .mobile-nav-trigger{
+	  		height: 37px;
+	  		width: 41px;
+	  		background-image: url('http://www.xn--12cl2bdbn8kwa7a1a3m8cku.com/mobile-nav-icon.png');	  		
+	   	}
+	  	.mobile-nav ul{
+	  		top: 37px;
+	  		padding-bottom: 10px;
+	  	}
+	  	.mobile-nav li{
+	  		padding: 5px 0 5px 20px;
+	  	}
+	  	.mobile-nav a{
+	  		font-size: 12px;
+	  	}
+}
+
+/* --------------------------------------------------------------------- */
+
+.page1 {
+  padding-top: 20px;
+  height: 100%;
+  min-height: 100vh;
+  margin: 20px;
+  border: 20px solid #000;
+  min-width: 300px;
+  font-family: monospace;
+  /*background-color: #faebd7;*/
+  background-image: linear-gradient( 45deg, #000, #666 );
+  overflow: hidden;  
+}
+
+#homeP {
+  color: #FFF;
+  text-align: center;
+}
+
+#homeImg {
+  width: 60%;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.1)));
+}
+
+#soundcloud {
+  height: 100%;
+}
+
+#gists {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.pages {
+  padding-top: 20px;
+  height: 100%;
+  min-height: 100vh;
+  margin: 20px;
+  min-width: 300px;
+  border: 20px solid #000;
+  font-family: monospace;
+  background-image: linear-gradient( 45deg, black, white );
+  text-align: center;
+  overflow: hidden;
+/*   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+p {
+  color: #000;
+  text-align: center;
+}
+
+h1 {
+/*   color: #faebd7; nice creme white */
+  color: #000;
+  text-align: center;
+}
+
+#contact {
+  padding-top: 20px;
+  height: 100%;
+  min-height: 100vh;
+  margin: 20px;
+  min-width: 300px;
+  border: 20px solid #000;
+  font-family: monospace;
+  text-align: center;
+  overflow: hidden;
+}
+
+#contact img {
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.1)));
+
+}
+
+/* __________________________________________________________ */
+
+#blog {
+  padding-top: 20px;
+  height: 100%;
+  margin: 20px;
+  min-width: 300px;
+  border: 20px solid #000;
+  font-family: monospace;
+  /*background-color: #faebd7;*/
+  background-image: linear-gradient( 45deg, #000, #FFF );
+  overflow: hidden;
+/*   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+#blogTimestamp {
+	text-align: right;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#blogDiv {
+	/*overflow: hidden;
+	position: relative;*/
+	padding-top: 5px;
+	padding-bottom: 80px;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 100%;
+	margin: 0 auto;
+	min-width: 280px;
+	width: 80%;
+	border: 1px solid #EEE;
+	font-family: monospace;
+	text-align: center;
+}
+
+#blogText {
+	text-align: left;
+}
+
+.footerClass {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 65px;
+  min-width: 389px;
+  width: 100%;
+  background: transparent;
+  text-align:right;
+  opacity: 1;
+  color: #faebd7;
+}
+
+#footerLinks {
+  text-align: center;
+}
+
+#footerLinks img:hover {
+  cursor: pointer;
+  animation: flash 1s infinite alternate;
+  animation-play-state: running;
+}
+
+#sqp5 {
+  filter: invert(85%);
+}
+
+#footerSig {
+  font-family: monospace;
+}
