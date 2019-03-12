@@ -1,14 +1,10 @@
 
 
 <!--
-Copyright (c) 2019 by Hillel (https://codepen.io/Wolin/pen/ZPyQow).
+Copyright (c) 2019 by Hillel (https://codepen.io/Wolin/pen/ZPyQow)
 
 
-
-
-Fork of an original work by Islam Ibakaev (https://codepen.io/dagman/pen/WwKrgX).
-
-
+Fork of an original work by Islam Ibakaev (https://codepen.io/dagman/pen/WwKrgX)
 
 
 
